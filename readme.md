@@ -10,6 +10,9 @@
 2. react-native run-ios
 3. yarn add <dependency-name>
 4. Remember to *bundle* the files when you add new dependency :
+i. when you have index.android.js file as starting screen for android
+```react-native bundle --platform android --dev false --entry-file index.android.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/```
+ii.when you want a single index file
 ```react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/```
 
  
